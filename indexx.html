@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EG ACADEMY | مركز إعدادي كرموز</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Tajawal',sans-serif;background:#f5f7fa;color:#1e2a3e;line-height:1.6;}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px;}
+        .top-bar{background:#0b2b40;color:white;padding:10px 0;text-align:center;}
+        .top-bar a{color:#ffd966;text-decoration:none;}
+        header{background:white;box-shadow:0 4px 12px rgba(0,0,0,0.05);position:sticky;top:0;z-index:100;}
+        .header-content{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:15px 0;}
+        .logo-area{display:flex;align-items:center;gap:15px;}
+        .logo-icon{background:#0f4c5f;color:white;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:bold;}
+        .logo-text h1{font-size:1.8rem;font-weight:800;color:#0b2b40;}
+        .logo-text p{font-size:0.8rem;color:#e67e22;}
+        nav a{margin-right:25px;text-decoration:none;color:#1e2a3e;font-weight:600;}
+        nav a:hover{color:#e67e22;}
+        .btn{display:inline-block;background:#e67e22;color:white;padding:12px 28px;border-radius:40px;text-decoration:none;font-weight:bold;transition:0.3s;}
+        .btn:hover{background:#cf711f;transform:translateY(-2px);}
+        .btn-outline{background:transparent;border:2px solid #e67e22;color:#e67e22;}
+        .btn-outline:hover{background:#e67e22;color:white;}
+        .hero{padding:60px 0;background:#fff;}
+        .hero-grid{display:flex;align-items:center;gap:40px;flex-wrap:wrap;}
+        .hero-info{flex:1;}
+        .hero-info h2{font-size:2.8rem;font-weight:800;color:#0b2b40;}
+        .hero-info h2 span{color:#e67e22;}
+        .address-badge{background:#f0f4f8;padding:12px 20px;border-radius:60px;display:inline-flex;align-items:center;gap:12px;margin:15px 0;}
+        .hero-image{flex:1;text-align:center;}
+        .hero-image .fake-logo{background:#0b2b40;color:white;width:150px;height:150px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto;font-size:50px;font-weight:bold;}
+        .section{padding:70px 0;}
+        .section-title{text-align:center;font-size:2.2rem;font-weight:800;margin-bottom:50px;color:#0b2b40;position:relative;}
+        .section-title:after{content:"";width:80px;height:4px;background:#e67e22;display:block;margin:12px auto 0;border-radius:4px;}
+        .teachers-grid{display:flex;flex-wrap:wrap;gap:30px;justify-content:center;}
+        .teacher-card{background:white;padding:25px;border-radius:28px;flex:1 1 280px;text-align:center;box-shadow:0 10px 20px rgba(0,0,0,0.08);border:1px solid #eef2f5;}
+        .teacher-icon{background:#0b2b40;width:80px;height:80px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:36px;color:#ffd966;}
+        .teacher-card h3{font-size:1.5rem;color:#0b2b40;}
+        .teacher-subject{color:#e67e22;font-weight:700;margin:10px 0;}
+        .teacher-desc{font-size:0.9rem;color:#2c3e50;margin-bottom:15px;}
+        .teacher-phone{direction:ltr;background:#f0f4f8;padding:8px 12px;border-radius:40px;display:inline-block;}
+        .teacher-phone a{text-decoration:none;color:#1e2a3e;}
+        .contact-info{background:#0b2b40;color:white;border-radius:40px;padding:40px;text-align:center;}
+        .contact-details{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin:30px 0;}
+        .contact-details i{margin-left:10px;color:#ffd966;}
+        .map-frame{margin-top:30px;border-radius:28px;overflow:hidden;box-shadow:0 10px 20px rgba(0,0,0,0.2);}
+        iframe{width:100%;height:350px;border:0;}
+        footer{background:#1e2a3e;color:#aaa;text-align:center;padding:30px 0;margin-top:30px;}
+        .whatsapp-float{position:fixed;bottom:25px;left:25px;background-color:#25D366;color:white;width:60px;height:60px;border-radius:50%;text-align:center;font-size:35px;line-height:60px;z-index:99;}
+        @media(max-width:768px){.header-content{flex-direction:column;}.hero-info h2{font-size:2rem;}}
+    </style>
+</head>
+<body>
+<div class="top-bar">
+    <i class="fas fa-graduation-cap"></i> EG ACADEMY – إي جي أكاديمي – خاص بالمرحلة الإعدادية 
+    <a href="tel:+201212963908"><i class="fas fa-phone-alt"></i> +20 12 12963908</a>
+</div>
+<header>
+    <div class="container header-content">
+        <div class="logo-area">
+            <div class="logo-icon">EG</div>
+            <div class="logo-text">
+                <h1>EG ACADEMY</h1>
+                <p>إي جي أكاديمي | مركز إعدادي</p>
+            </div>
+        </div>
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#teachers">المدرسون</a>
+            <a href="#contact">اتصل بنا</a>
+            <a href="#location">الموقع</a>
+        </nav>
+    </div>
+</header>
+<section id="home" class="hero">
+    <div class="container hero-grid">
+        <div class="hero-info">
+            <h2>EG <span>ACADEMY</span></h2>
+            <p>إي جي أكاديمي – مركز متخصص في <strong>المرحلة الإعدادية</strong> فقط. نخبة من أفضل المدرسين في كرموز، المحمودية.</p>
+            <div class="address-badge">
+                <i class="fas fa-map-marker-alt"></i> <strong>📍 كرموز، المحمودية – أمام مول رنين</strong>
+            </div>
+            <div>
+                <a href="tel:+201212963908" class="btn"><i class="fas fa-phone"></i> اتصل الآن</a>
+                <a href="https://wa.me/201212963908" target="_blank" class="btn btn-outline"><i class="fab fa-whatsapp"></i> واتساب</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="fake-logo">EG</div>
+        </div>
+    </div>
+</section>
+<section id="teachers" class="section">
+    <div class="container">
+        <h2 class="section-title">أساتذتنا المتميزون</h2>
+        <div class="teachers-grid">
+            <div class="teacher-card"><div class="teacher-icon"><i class="fas fa-chalkboard-user"></i></div><h3>مستر محمد عبدالقادر</h3><div class="teacher-subject">📖 اللغة العربية</div><div class="teacher-desc">خبرة طويلة في تدريس العربية للمرحلة الإعدادية، متخصص في النحو والبلاغة.</div><div class="teacher-phone"><i class="fab fa-whatsapp"></i> <a href="https://wa.me/201069930276">+20 10 69930276</a> | <a href="tel:+201069930276">اتصل</a></div></div>
+            <div class="teacher-card"><div class="teacher-icon"><i class="fas fa-calculator"></i></div><h3>مستر إسلام غريب</h3><div class="teacher-subject">📐 الرياضيات</div><div class="teacher-desc">خبير في تأسيس الطلاب في الجبر والهندسة، بأسلوب تفاعلي.</div><div class="teacher-phone"><i class="fab fa-whatsapp"></i> <a href="https://wa.me/201212963908">+20 12 12963908</a> | <a href="tel:+201212963908">اتصل</a></div></div>
+            <div class="teacher-card"><div class="teacher-icon"><i class="fas fa-flask"></i></div><h3>مستر شوقي عصمت</h3><div class="teacher-subject">🔬 العلوم</div><div class="teacher-desc">شرح العلوم بالتجارب والرسوم التوضيحية، تبسيط المفاهيم.</div><div class="teacher-phone"><i class="fab fa-whatsapp"></i> <a href="https://wa.me/201015326484">+20 10 15326484</a> | <a href="tel:+201015326484">اتصل</a></div></div>
+            <div class="teacher-card"><div class="teacher-icon"><i class="fas fa-globe-africa"></i></div><h3>مستر تامر شحاته</h3><div class="teacher-subject">🌍 الدراسات الاجتماعية</div><div class="teacher-desc">متخصص في الجغرافيا والتاريخ، خرائط ذهنية للحفظ.</div><div class="teacher-phone"><i class="fab fa-whatsapp"></i> <a href="https://wa.me/201201031599">+20 12 01031599</a> | <a href="tel:+201201031599">اتصل</a></div></div>
+            <div class="teacher-card"><div class="teacher-icon"><i class="fas fa-language"></i></div><h3>مستر خالد عبد المنعم</h3><div class="teacher-subject">🇬🇧 English</div><div class="teacher-desc">تدريس القواعد والمحادثة بطرق عصرية.</div><div class="teacher-phone"><i class="fab fa-whatsapp"></i> <a href="https://wa.me/201204580303">+20 12 04580303</a> | <a href="tel:+201204580303">اتصل</a></div></div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="section">
+    <div class="container">
+        <h2 class="section-title">تواصل معنا</h2>
+        <div class="contact-info">
+            <h3>📞 EG ACADEMY – إي جي أكاديمي</h3>
+            <div class="contact-details">
+                <div><i class="fas fa-map-pin"></i> كرموز، المحمودية – أمام مول رنين</div>
+                <div><i class="fas fa-phone-alt"></i> <a href="tel:+201212963908" style="color:#ffd966;">+20 12 12963908</a></div>
+                <div><i class="fab fa-facebook"></i> EG Academy</div>
+            </div>
+            <p>🕒 السبت – الخميس: 10 ص – 9 م</p>
+        </div>
+    </div>
+</section>
+<section id="location" class="section" style="padding-top:0">
+    <div class="container">
+        <h2 class="section-title">موقعنا على الخريطة</h2>
+        <div class="map-frame">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13650.129405033675!2d29.8925!3d31.1987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1680000000000!5m2!1sar!2seg" allowfullscreen="" loading="lazy"></iframe>
+            <div style="background:#f8f9fa;padding:10px;text-align:center">
+                <i class="fas fa-location-dot"></i> كرموز، المحمودية – أمام مول رنين<br>
+                <a href="https://maps.app.goo.gl/v1WVsGE7X4ZX5hFE7" target="_blank" style="color:#e67e22;">📍 افتح الموقع على خرائط جوجل بالضبط</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <p>© 2026 EG ACADEMY – إي جي أكاديمي – جميع الحقوق محفوظة</p>
+        <p>للاستفسار: <a href="tel:+201212963908" style="color:#ffd966;">+20 12 12963908</a></p>
+    </div>
+</footer>
+<a href="https://wa.me/201212963908" target="_blank" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+<script>
+    document.querySelectorAll('nav a').forEach(a=>{a.addEventListener('click',function(e){e.preventDefault();const id=this.getAttribute('href').substring(1);const el=document.getElementById(id);if(el) el.scrollIntoView({behavior:'smooth'});})});
+</script>
+</body>
+</html>
